@@ -1,0 +1,26 @@
+{
+  "skill_name": "skill-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to create a skill for specifically handling Git merge conflicts. It should explain the markers and help the user pick which side to keep.",
+      "expected_output": "Initial folder structure for 'git-conflict-resolver'. Draft of SKILL.md with imperative instructions on markers (<<<<<<<, =======, >>>>>>>).",
+      "assertions": [
+        "The folder structure includes 'references/' and 'scripts/'",
+        "The draft SKILL.md includes a description starting with 'Use this skill to...'",
+        "The workflow includes a 'Progress:' checklist",
+        "The model suggests iterative evaluation as a step"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "My 'git-conflict-resolver' skill isn't triggering when I say 'help me fix this merge'. How do I fix the description?",
+      "expected_output": "Advice to make the description more 'pushy' and inclusive of user intent. Suggestion like: 'Use this skill WHENEVER the user encounters Git conflict markers or needs help resolving merges.'",
+      "assertions": [
+        "The model identifies that the current description might be too narrow",
+        "The recommendation follows the 'imperative' and 'user intent' principles",
+        "The model warns against 'overfitting' to the specific prompt"
+      ]
+    }
+  ]
+}

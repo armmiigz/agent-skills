@@ -1,0 +1,25 @@
+{
+  "skill_name": "shadcn-ui",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm building a dashboard and I need a searchable list of customers. What's the best shadcn component for this and can you add it to my project?",
+      "expected_output": "Recommendation of the Command or Combobox component. Command to run 'npx shadcn@latest add command' and 'npx shadcn@latest add popover'.",
+      "assertions": [
+        "The model recommends 'Combobox' or 'Command' instead of just 'Select'",
+        "The output includes a command to add the necessary shadcn components",
+        "The response mentions ownership and where the files will be placed (components/ui)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to change the primary color of my shadcn components to a deep purple. How do I do that?",
+      "expected_output": "Instructions to modify the CSS variables (e.g., --primary) in index.css or tailwind.config.ts using OKLCH or HSL.",
+      "assertions": [
+        "The output suggests modifying CSS variables, not inline styles",
+        "The model mentions OKLCH for modern color definitions if using Tailwind v4",
+        "The response explains that changes should be made in the global CSS file or theme configuration"
+      ]
+    }
+  ]
+}

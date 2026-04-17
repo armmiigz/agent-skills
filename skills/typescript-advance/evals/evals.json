@@ -1,0 +1,27 @@
+{
+  "skill_name": "typescript-advance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have an API response that can either be a success with data or an error with a message. How should I type this in TypeScript?",
+      "expected_output": "Definition of a Discriminated Union (e.g., interface Success { type: 'success', data: ... } | interface Error { type: 'error', message: ... }).",
+      "assertions": [
+        "The model suggests a Discriminated Union",
+        "The union uses a common literal property (e.g., 'type' or 'status') as a discriminant",
+        "The response explains why this is better than optional properties",
+        "The model demonstrates how to narrow the type using a switch or if statement"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm using 'any' for a complex configuration object because it can have many different shapes. Can you help me make it more type-safe using generics?",
+      "expected_output": "Implementation of a generic type or interface with constraints (e.g., interface Config<T extends BaseRecord> { ... }).",
+      "assertions": [
+        "The model recommends removing 'any' in favor of 'unknown' or generics",
+        "The suggested generic includes a constraint (extends)",
+        "The model explains the benefit of using 'unknown' over 'any' for type narrowing",
+        "The output includes a practical example of the generic in use"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "skill_name": "setup-linting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm starting a new React project and I need to make sure my code is clean from the start. Can you set up ESLint and Prettier for me? Use strict rules so I don't use 'any' anywhere.",
+      "expected_output": "Installation of eslint, prettier, and typescript-eslint. Creation of a strict eslint.config.js and .prettierrc. Update to package.json with lint scripts.",
+      "assertions": [
+        "The output includes eslint.config.js and .prettierrc",
+        "The eslint.config.js file uses Flat Config format (v9+)",
+        "The '@typescript-eslint/no-explicit-any' rule is set to 'error'",
+        "package.json includes 'lint' and 'format' scripts"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our team's code is a mess. Can you add husky and lint-staged to our project so we can't commit if there are linting errors?",
+      "expected_output": "Installation of husky and lint-staged. Configuration of husky (pre-commit hook) and lint-staged in package.json or a config file.",
+      "assertions": [
+        "The output includes husky installation",
+        "A .husky/pre-commit file is created or mentioned",
+        "lint-staged is configured to run 'eslint --fix'",
+        "The prompt results in automated enforcement setup"
+      ]
+    }
+  ]
+}
