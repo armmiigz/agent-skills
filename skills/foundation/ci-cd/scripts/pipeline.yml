@@ -1,0 +1,71 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: Lint & Type Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Type Check
+        run: npm run type-check
+
+  test:
+    name: Run Tests
+    needs: quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Unit Tests
+        run: npm run test:unit
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run E2E Tests
+        run: npm run test:e2e
+
+  build:
+    name: Build & Package
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Restore Next.js cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Build
+        run: npm run build
+      - name: Upload Standalone Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: standalone-build
+          path: .next/standalone
