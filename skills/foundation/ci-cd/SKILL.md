@@ -3,6 +3,9 @@ name: ci-cd
 description: Enterprise-grade CI/CD pipelines for Next.js 15+. Optimized for GitHub Actions, Turborepo, and Vercel. Focuses on build caching, standalone artifacts, and secure environment management.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Medium"
+    - "Permissions: GitHub Actions workflow creation"
   triggers:
     - "setup github actions"
     - "configure ci/cd"

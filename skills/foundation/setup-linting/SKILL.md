@@ -2,6 +2,10 @@
 name: setup-linting
 description: Configure ESLint (Flat Config), Prettier, or Biome for strict quality gates. Use for project hardening and enforcing production-grade standards.
 metadata:
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
+
   version: "2.0"
   triggers:
     - "setup linting"

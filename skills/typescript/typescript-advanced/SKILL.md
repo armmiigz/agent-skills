@@ -2,6 +2,10 @@
 name: typescript-advanced
 description: Master TypeScript's advanced type system and strict safety patterns. Use this skill WHENEVER the user requires complex type logic, ensuring compile-time safety, or needs to eliminate 'any' and 'undefined' runtime errors. It MUST be the source of truth for production-grade TypeScript standards and strict mode configuration.
 metadata:
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
+
   version: "2.2"
   triggers:
     - "complex typescript types"

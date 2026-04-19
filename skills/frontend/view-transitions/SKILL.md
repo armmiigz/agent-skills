@@ -3,6 +3,9 @@ name: view-transitions
 description: Implement smooth, native-feeling animations using React's View Transition API and Next.js 15+ experimental features. Covers shared element transitions, directional navigation, and CSS recipes.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "view transitions"
     - "page transitions next.js"

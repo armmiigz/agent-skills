@@ -3,6 +3,9 @@ name: i18n
 description: Internationalization (i18n) for Next.js 15+. Standardized patterns using next-intl for routing, translations, and localized SEO. optimized for performance and type-safety.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "setup i18n"
     - "add multi-language support"

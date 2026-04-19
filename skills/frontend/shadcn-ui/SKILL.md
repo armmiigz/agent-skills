@@ -2,6 +2,10 @@
 name: shadcn-ui
 description: Manage shadcn/ui components with Tailwind v4. Focuses on ownership, customization, and accessible UI patterns.
 metadata:
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
+
   version: "2.0"
   triggers:
     - "add shadcn component"

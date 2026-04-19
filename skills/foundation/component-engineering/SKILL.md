@@ -3,6 +3,10 @@ name: component-engineering
 description: Industrial-grade component development. Covers component scaffolding, Storybook integration for documentation, and custom React hook patterns for reusability.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: File read/write (for scaffolding)"
+    - "Execution: Runs python scripts for component generation"
   triggers:
     - "create new component"
     - "setup storybook"

@@ -3,6 +3,10 @@ name: backend-services
 description: Backend patterns for Node.js/Next.js. Covers Route Handlers, authentication with better-auth, and validation with Zod.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Medium"
+    - "Permissions: File read/write (for API setup)"
+    - "Network: Handles external Auth and API calls"
   triggers:
     - "setup api"
     - "backend logic"

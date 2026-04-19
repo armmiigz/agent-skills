@@ -3,6 +3,9 @@ name: state-management
 description: High-performance state management for Next.js 15+. Combines TanStack Query for server-state (caching, fetching) and Zustand for lightweight global client-state. Optimized for token-efficiency and re-render reduction.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "setup state management"
     - "tanstack query config"

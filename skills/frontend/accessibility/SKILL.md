@@ -3,6 +3,9 @@ name: accessibility-a11y
 description: Build inclusive web applications following WCAG 2.1 standards. Covers ARIA roles, keyboard navigation, semantic HTML, and automated a11y testing.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "setup accessibility"
     - "improve a11y"

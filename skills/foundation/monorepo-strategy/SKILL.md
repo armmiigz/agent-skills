@@ -3,6 +3,10 @@ name: monorepo-strategy
 description: Standardized monorepo architecture for scaling Next.js 15+ projects. Covers Turborepo orchestration, shared packages (UI, Utils, Config), pnpm workspaces, and deployment optimization.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Medium"
+    - "Permissions: Root-level file system access"
+    - "Execution: Runs pnpm commands and turbo orchestration"
   triggers:
     - "setup monorepo"
     - "configure turborepo"

@@ -3,6 +3,9 @@ name: performance-audit-vitals
 description: Master Next.js 15+ performance. Focuses on Core Web Vitals (LCP, CLS, INP), Lighthouse 100/100 scores, and advanced optimization techniques (Streaming, PPR, Image optimization).
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "audit performance"
     - "improve lighthouse score"

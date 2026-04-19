@@ -3,6 +3,9 @@ name: prompt-engineering
 description: Workflows to write, debug, and optimize prompts for LLMs. Includes few-shot selection, chain-of-thought structuring, system prompt design, and template composition.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Logic only"
   triggers:
     - "write prompt"
     - "improve prompt"

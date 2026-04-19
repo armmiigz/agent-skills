@@ -3,6 +3,9 @@ name: composition-patterns
 description: Advanced React composition patterns to build flexible and maintainable components. Avoid "prop drilling" and "prop proliferation" by using Compound Components, Inversion of Control, and React 19 APIs.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "react composition"
     - "compound components"

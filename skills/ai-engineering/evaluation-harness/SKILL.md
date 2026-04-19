@@ -3,6 +3,9 @@ name: evaluation-harness
 description: Systematic evaluation of LLM applications. Build golden datasets, scoring rubrics, and regression reports to ensure model quality and catch regressions.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "llm evaluation"
     - "ai testing"

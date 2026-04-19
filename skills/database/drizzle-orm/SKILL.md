@@ -3,6 +3,9 @@ name: drizzle-orm
 description: Database management with Drizzle ORM. Covers schema design, migrations, and relations for Postgres and SQLite.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Medium"
+    - "Permissions: Database connection and schema migration"
   triggers:
     - "setup database"
     - "drizzle schema"

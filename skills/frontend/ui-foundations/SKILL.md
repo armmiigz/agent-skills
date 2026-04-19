@@ -2,6 +2,10 @@
 name: ui-foundations
 description: Design brand foundations with OKLCH colors and Tailwind CSS v4. Use for theme configuration, typography scales, and design tokens.
 metadata:
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
+
   version: "2.0"
   triggers:
     - "setup tailwind 4"

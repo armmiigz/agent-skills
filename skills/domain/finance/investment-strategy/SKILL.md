@@ -3,6 +3,9 @@ name: investment-strategy
 description: Frameworks for building and managing investment portfolios. Covers asset classes (stocks, bonds, alternatives), risk profiling, asset allocation, and rebalancing techniques.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "investment strategy"
     - "asset allocation"

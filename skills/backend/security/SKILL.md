@@ -3,6 +3,9 @@ name: app-security
 description: Defense-in-depth security for Next.js 15+. Covers Server Action hardening, Content Security Policy (CSP) with nonces, Rate Limiting, and sensitive data protection using Taint APIs.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "setup security"
     - "hardening server actions"

@@ -3,6 +3,9 @@ name: architecture-decision-records
 description: Create and manage Architecture Decision Records (ADRs) to document significant technical choices and their rationale. Use this WHENEVER a major design decision is made, a new framework is adopted, or a fundamental architectural pattern is changed.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "write adr"
     - "document architectural decision"

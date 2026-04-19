@@ -3,6 +3,9 @@ name: architecture
 description: Full-stack architecture patterns for Next.js 15+. Defines directory structure, layering, and naming conventions for scalable applications.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "project structure"
     - "where to put files"

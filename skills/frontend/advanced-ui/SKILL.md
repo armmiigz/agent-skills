@@ -3,6 +3,9 @@ name: advanced-ui
 description: Build high-performance, interactive UI. Covers complex tables (TanStack Table), advanced micro-animations (Framer Motion), and multi-step UX flow orchestration.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "build complex table"
     - "framer motion animations"

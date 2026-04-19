@@ -3,6 +3,9 @@ name: api-mocking
 description: Decouple frontend from backend development. Covers API mocking using Mock Service Worker (MSW), generating realistic mock data (Faker.js), and testing failure scenarios.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "setup msw"
     - "mock api response"

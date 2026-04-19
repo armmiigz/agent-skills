@@ -3,6 +3,10 @@ name: testing
 description: Comprehensive testing strategy for Next.js 15+. Covers unit/component testing with Vitest and End-to-End (E2E) testing with Playwright. Focuses on testing user behavior, SSR validation, and performance.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: File read/write (for creating tests)"
+    - "Execution: Runs shell scripts to install dependencies"
   triggers:
     - "setup testing"
     - "write unit test"

@@ -3,6 +3,9 @@ name: react-best-practices
 description: React performance and architecture best practices from Vercel Engineering. Covers hooks optimization, re-render reduction, bundle size control, and composition patterns.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "react best practices"
     - "optimize react component"

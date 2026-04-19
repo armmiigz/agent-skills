@@ -3,6 +3,10 @@ name: wealth-management
 description: Principles of personal wealth management for sustainable financial growth. Covers net worth calculation, budgeting strategies (50/30/20), emergency funds, and Financial Independence (FIRE).
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: File read/write"
+    - "No network access required"
   triggers:
     - "calculate net worth"
     - "budgeting strategy"

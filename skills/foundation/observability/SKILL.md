@@ -3,6 +3,9 @@ name: observability
 description: Implement professional monitoring and logging. Covers structured logging (Pino/Winston), correlation IDs (Request Tracing), and standardized error handling for production.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: File read/write (for logging config)"
   triggers:
     - "setup logging"
     - "structured logs"

@@ -3,6 +3,10 @@ name: financial-math
 description: Core mathematical formulas and implementation rules for finance. Covers Time Value of Money (TVM), CAGR, XIRR, and precision handling in code.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Pure logic/calculations"
+    - "No network/file system access required"
   triggers:
     - "calculate CAGR"
     - "calculate XIRR"

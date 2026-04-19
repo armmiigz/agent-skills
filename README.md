@@ -1,79 +1,70 @@
-# Agent Skills
+# Agent Skills Toolkit
 
-A curated collection of skills designed to extend the capabilities of AI coding agents (Claude Code, Cursor, Antigravity, etc.). These skills provide packaged instructions, technical references, and scripts to handle specific, complex workflows.
+A production-grade repository of "Skills" for AI agents, optimized for Next.js 15+, professional engineering standards, and financial intelligence.
 
-## Project Structure (Categorized)
+## 🛠 Skills Index
 
-Skills are organized into categories for better discoverability and context management:
+### 🏗 Foundation
+- [skill-creator](./skills/foundation/skill-creator/SKILL.md): Meta-skill for creating and improving other skills.
+- [setup-linting](./skills/foundation/setup-linting/SKILL.md): Modern ESLint, Prettier, and Biome.
+- [architecture](./skills/foundation/architecture/SKILL.md): Standard project structure for Next.js 15+.
+- [architecture-decision-records](./skills/foundation/architecture-decision-records/SKILL.md): Documenting technical decisions (ADRs).
+- [spec-driven-development](./skills/foundation/spec-driven-development/SKILL.md): Spec-First implementation workflow.
+- [project-documentation](./skills/foundation/project-documentation/SKILL.md): Automated Changelogs, JSDoc, and API docs.
+- [observability](./skills/foundation/observability/SKILL.md): Structured logging and correlation IDs.
+- [component-engineering](./skills/foundation/component-engineering/SKILL.md): Storybook and component scaffolding.
+- [monorepo-strategy](./skills/foundation/monorepo-strategy/SKILL.md): Scaling with Turborepo.
+- [code-review](./skills/foundation/code-review/SKILL.md): Professional review standards.
+- [advanced-debugging](./skills/foundation/advanced-debugging/SKILL.md): Root cause analysis and profiling.
+- [ux-writing](./skills/foundation/ux-writing/SKILL.md): Microcopy and tone of voice.
 
-- **foundation/**: Core project setup and agent management.
-  - [skill-creator](./skills/foundation/skill-creator/SKILL.md): Meta-skill for creating and improving other skills.
-  - [setup-linting](./skills/foundation/setup-linting/SKILL.md): Modern ESLint (Flat Config), Prettier, and Biome.
-  - [architecture](./skills/foundation/architecture/SKILL.md): Standard project structure for Next.js 15+ apps.
-  - [architecture-decision-records](./skills/foundation/architecture-decision-records/SKILL.md): Documenting technical decisions (ADRs).
-  - [testing](./skills/foundation/testing/SKILL.md): Vitest and Playwright testing strategy.
-  - [ci-cd](./skills/foundation/ci-cd/SKILL.md): GitHub Actions pipelines and build optimization.
-  - [project-documentation](./skills/foundation/project-documentation/SKILL.md): Automated Changelogs, JSDoc, and API docs.
-  - [observability](./skills/foundation/observability/SKILL.md): Structured logging, correlation IDs, and monitoring.
-  - [component-engineering](./skills/foundation/component-engineering/SKILL.md): Storybook, scaffolding, and hook patterns.
-  - [monorepo-strategy](./skills/foundation/monorepo-strategy/SKILL.md): Scaling with Turborepo and shared packages.
-- **frontend/**: UI, CSS, and user experience.
-  - [nextjs](./skills/frontend/nextjs/SKILL.md): Next.js 15+ Ultimate Guide (RSC, Actions, PPR).
-  - [shadcn-ui](./skills/frontend/shadcn-ui/SKILL.md): shadcn/ui components with Tailwind v4.
-  - [ui-foundations](./skills/frontend/ui-foundations/SKILL.md): Design systems with Tailwind v4 and OKLCH.
-  - [react-best-practices](./skills/frontend/react-best-practices/SKILL.md): Vercel-grade React performance rules.
-  - [composition-patterns](./skills/frontend/composition-patterns/SKILL.md): Flexible component architecture.
-  - [view-transitions](./skills/frontend/view-transitions/SKILL.md): Smooth, native-feeling page animations.
-  - [state-management](./skills/frontend/state-management/SKILL.md): TanStack Query and Zustand patterns.
-  - [i18n](./skills/frontend/i18n/SKILL.md): Multi-language support with next-intl.
-  - [accessibility](./skills/frontend/accessibility/SKILL.md): WCAG 2.1 compliance and inclusive design.
-  - [advanced-ui](./skills/frontend/advanced-ui/SKILL.md): Complex tables, Framer Motion, and UX flows.
-  - [performance-audit](./skills/frontend/performance-audit/SKILL.md): Core Web Vitals and Lighthouse 100/100.
-- **backend/**: Server-side logic and APIs.
-  - [api-services](./skills/backend/api-services/SKILL.md): Type-safe APIs with better-auth and Zod.
-  - [app-security](./skills/backend/security/SKILL.md): Hardening, CSP nonces, and Rate Limiting.
-- **database/**: Data persistence and modeling.
-  - [drizzle-orm](./skills/database/drizzle-orm/SKILL.md): Drizzle ORM schema and migrations.
-- **architecture/**: System design and maintenance.
-  - [engineering-standards](./skills/architecture/engineering-standards/SKILL.md): Tech debt, coverage, and quality.
-- **testing/**: Advanced testing patterns.
-  - [api-mocking](./skills/testing/api-mocking/SKILL.md): Decoupled development with MSW.
-- **typescript/**: Language-specific expertise.
-  - [typescript-advanced](./skills/typescript/typescript-advanced/SKILL.md): Advanced TypeScript patterns and safety.
-- **ai-engineering/**: AI development and testing.
-  - [evaluation-harness](./skills/ai-engineering/evaluation-harness/SKILL.md): Systematic LLM evaluation and regression testing.
-  - [prompt-engineering](./skills/ai-engineering/prompt-engineering/SKILL.md): Designing and optimizing LLM prompts.
-- **domain/finance/**: Financial knowledge and engineering.
-  - [wealth-management](./skills/domain/finance/wealth-management/SKILL.md): Personal finance, budgeting, and net worth.
-  - [investment-strategy](./skills/domain/finance/investment-strategy/SKILL.md): Asset allocation and portfolio management.
-  - [financial-math](./skills/domain/finance/financial-math/SKILL.md): Core formulas (XIRR, CAGR) and precision math.
+### 🎨 Frontend & Design
+- [nextjs](./skills/frontend/nextjs/SKILL.md): Next.js 15+ Ultimate Guide (RSC, Actions, PPR).
+- [shadcn-ui](./skills/frontend/shadcn-ui/SKILL.md): shadcn/ui and Tailwind v4 patterns.
+- [ui-foundations](./skills/frontend/ui-foundations/SKILL.md): Design systems with OKLCH.
+- [react-best-practices](./skills/frontend/react-best-practices/SKILL.md): High-performance React rules.
+- [composition-patterns](./skills/frontend/composition-patterns/SKILL.md): Flexible component architecture.
+- [view-transitions](./skills/frontend/view-transitions/SKILL.md): Smooth page animations.
+- [state-management](./skills/frontend/state-management/SKILL.md): TanStack Query and Zustand.
+- [advanced-ui](./skills/frontend/advanced-ui/SKILL.md): Complex tables and Framer Motion.
+- [performance-audit](./skills/frontend/performance-audit/SKILL.md): Core Web Vitals (LCP, CLS, INP).
+- [design-system-management](./skills/frontend/design-system-management/SKILL.md): Scaling UI tokens and libraries.
+- [design-handoff](./skills/frontend/design-handoff/SKILL.md): Figma-to-Code fidelity.
+- [accessibility-review](./skills/frontend/accessibility-review/SKILL.md): WCAG 2.1 compliance auditing.
 
-## How to Create a New Skill
+### ⚙️ Backend & Infrastructure
+- [api-services](./skills/backend/api-services/SKILL.md): Type-safe APIs with better-auth.
+- [app-security](./skills/backend/security/SKILL.md): Hardening, CSP, and Rate Limiting.
+- [ci-cd](./skills/foundation/ci-cd/SKILL.md): GitHub Actions and build pipelines.
 
-Use the `skill-creator` to scaffold new skills following our standards:
+### 🗄 Database
+- [drizzle-orm](./skills/database/drizzle-orm/SKILL.md): Schema design and migrations.
 
-1. Ask your agent: "Create a new skill for [your topic]"
-2. The agent will run:
-   ```bash
-   python scripts/scaffold-skill.py --name "your-skill-name" --category "appropriate-category"
-   ```
-3. Follow the generated `SKILL.md` template.
+### 🏛 Architecture & Strategy
+- [system-design](./skills/architecture/system-design/SKILL.md): Scalable distributed systems.
+- [tech-debt-management](./skills/architecture/tech-debt-management/SKILL.md): Audit and refactoring strategy.
 
-## How to Use
+### 🧪 Testing
+- [testing](./skills/foundation/testing/SKILL.md): Vitest and Playwright setup.
+- [testing-strategy](./skills/testing/testing-strategy/SKILL.md): The Test Pyramid and coverage.
+- [api-mocking](./skills/testing/api-mocking/SKILL.md): Isolated dev with MSW.
 
-### 1. Claude Code
+### 📈 Domain & Analysis
+- [wealth-management](./skills/domain/finance/wealth-management/SKILL.md): Net worth and budgeting.
+- [investment-strategy](./skills/domain/finance/investment-strategy/SKILL.md): Asset allocation and rebalancing.
+- [financial-math](./skills/domain/finance/financial-math/SKILL.md): XIRR, CAGR, and precision math.
+- [market-research](./skills/domain/finance/market-research/SKILL.md): Benchmarking and synthesis.
+- [news-sentiment-analysis](./skills/domain/finance/news-sentiment/SKILL.md): Global news analysis and sentiment scoring.
+- [variance-analysis](./skills/domain/analysis/variance-analysis/SKILL.md): Plan vs. Actual discrepancy analysis.
 
-To add a skill to your local Claude Code environment:
+### 🤖 AI Engineering
+- [prompt-engineering](./skills/ai-engineering/prompt-engineering/SKILL.md): Critic loop and meta-prompting.
+- [evaluation-harness](./skills/ai-engineering/evaluation-harness/SKILL.md): Benchmarking AI performance.
 
+---
+
+## 🚀 How to Use
+Add these skills to your agentic workspace:
 ```bash
-cp -r skills/{category}/{skill-name} ~/.claude/skills/
+npx skills add [url-to-this-repo]
 ```
-
-### 2. Claude.ai / Cursor / IDE Agents
-
-Point your agent to the relevant `SKILL.md` file or upload the directory content to your project context.
-
-## Repository Structure
-
-- `skills/`: Categorized root directory for all skills.
-- `AGENT.md`: Guidelines for creating and contributing new skills.

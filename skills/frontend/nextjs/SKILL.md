@@ -3,6 +3,9 @@ name: nextjs
 description: Production-grade Next.js 15+ patterns. Covers App Router, Server Actions, "use cache", and Async Request APIs. Use for building performant full-stack apps.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: File read/write (for app router setup)"
   triggers:
     - "setup next.js"
     - "server components"

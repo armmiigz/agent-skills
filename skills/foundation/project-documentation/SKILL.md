@@ -3,6 +3,9 @@ name: project-documentation
 description: Maintain professional project documentation. Covers automated Changelogs (Keep a Changelog), Type-safe API docs (OpenAPI/Swagger), and standardized JSDoc for TypeScript.
 metadata:
   version: "1.0"
+  security_assessment:
+    - "Risk: Low"
+    - "Permissions: Local file modification only"
   triggers:
     - "create changelog"
     - "generate api docs"
